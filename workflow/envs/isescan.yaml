@@ -1,0 +1,11 @@
+channels:
+- conda-forge
+- bioconda
+- nodefaults
+dependencies:
+- python=3.9
+- isescan=1.7.3
+- numpy=1.23.5
+- scipy=1.10.1
+- pandas=1.5.3
+- fastcluster=1.2.6

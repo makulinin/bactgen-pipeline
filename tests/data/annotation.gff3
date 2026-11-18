@@ -1,0 +1,4 @@
+##gff-version 3
+c1	Bakta	CDS	20	100	.	+	0	ID=cds1
+c1	Bakta	tRNA	200	250	.	+	.	ID=t1
+c1	Bakta	rRNA	300	350	.	+	.	ID=r1

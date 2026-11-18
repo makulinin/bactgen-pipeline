@@ -1,0 +1,18 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+required:
+- sample
+- nanopore_reads
+- illumina_r1_reads
+- illumina_r2_reads
+additionalProperties: false
+properties:
+  sample:
+    type: string
+    pattern: ^[A-Za-z0-9][A-Za-z0-9_.-]*$
+  nanopore_reads:
+    type: string
+  illumina_r1_reads:
+    type: string
+  illumina_r2_reads:
+    type: string

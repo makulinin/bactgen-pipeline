@@ -1,0 +1,8 @@
+cores: 8
+resources:
+  mem_mb: 64000
+use-conda: true
+conda-frontend: conda
+rerun-incomplete: true
+printshellcmds: true
+latency-wait: 30

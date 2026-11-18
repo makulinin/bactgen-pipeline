@@ -1,0 +1,95 @@
+manifest: tests/data/manifest.csv
+results_dir: results
+modules:
+  checkm2: true
+  bakta: true
+  amrfinder: true
+  genomad: true
+  isescan: true
+databases:
+  checkm2:
+    path: resources/databases/checkm2/CheckM2_database/uniref100.KO.1.dmnd
+    version: SET_ME
+  bakta:
+    path: resources/databases/bakta/db-light
+    version: SET_ME
+  amrfinder:
+    path: resources/databases/amrfinder/SET_ME
+    version: SET_ME
+  genomad:
+    path: resources/databases/genomad/genomad_db
+    version: SET_ME
+fastp:
+  qualified_quality_phred: 20
+  length_required: 50
+  detect_adapter_for_pe: true
+fastqc:
+  enabled: true
+nanoplot:
+  enabled: true
+unicycler:
+  mode: normal
+  min_fasta_length: 200
+  extra_args: []
+quast:
+  min_contig: 200
+checkm2:
+  min_completeness: 90
+  max_contamination: 5
+  exclude_failed: false
+bakta:
+  translation_table: 11
+  genus: ''
+  species: ''
+  gram: '?'
+  min_contig_length: 1
+amrfinder:
+  plus: true
+  organism: ''
+genomad:
+  splits: 8
+  cleanup: false
+isescan:
+  remove_short_is: false
+coordinates:
+  nearby_bp: 10000
+resources:
+  preflight:
+    threads: 1
+    mem_mb: 1024
+  fastqc:
+    threads: 2
+    mem_mb: 2048
+  fastp:
+    threads: 4
+    mem_mb: 4096
+  nanoplot:
+    threads: 4
+    mem_mb: 4096
+  multiqc:
+    threads: 1
+    mem_mb: 2048
+  unicycler:
+    threads: 8
+    mem_mb: 32000
+  quast:
+    threads: 4
+    mem_mb: 8000
+  checkm2:
+    threads: 8
+    mem_mb: 32000
+  bakta:
+    threads: 8
+    mem_mb: 16000
+  amrfinder:
+    threads: 4
+    mem_mb: 8000
+  genomad:
+    threads: 8
+    mem_mb: 16000
+  isescan:
+    threads: 4
+    mem_mb: 8000
+  summary:
+    threads: 1
+    mem_mb: 2048

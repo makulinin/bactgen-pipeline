@@ -1,0 +1,4 @@
+Contig id	Start	Stop	Strand	Gene symbol	Element type	Element subtype	Class	Subclass	Method
+c1	20	100	+	tet(W)	AMR	AMR	TETRACYCLINE	TETRACYCLINE	BLASTX
+c1	110	120	+	gyrA_S83L	AMR	POINT	QUINOLONE	QUINOLONE	POINTX
+c1	150	160	+	extra	STRESS	METAL	METAL	COPPER	BLASTX
